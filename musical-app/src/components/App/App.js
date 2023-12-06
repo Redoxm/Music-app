@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import SearchResearch from "../SearchResearch/SearchResearch";
+import SearchResults from "../SearchResults/SearchResults";
 import SearchBar from "../SearchBar/SearchBar";
 import Playlist from "../Playlist/Playlist";
 import Spotify from "../Utils/Spotify";
@@ -81,7 +81,7 @@ class App extends Component {
           <SearchBar onSearch={this.search}/>
         </div>
         <div className="App-playlist">
-          <SearchResearch searchResearch={this.state.SearchResults} onAdd={this.doThese}/>
+          <SearchResults searchResults={this.state.SearchResults} onAdd={this.doThese}/>
           <Playlist playlistTracks={this.state.playlistTracks} 
             onNameChange={this.updatePlaylistName}
             onRemove={this.removeTrack} 
