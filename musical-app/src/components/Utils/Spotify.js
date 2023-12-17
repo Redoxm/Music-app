@@ -29,11 +29,9 @@ const Spotify = {
             }
         } ).then(response => {
             return response.json();
-        })
-        .then(jsonResponse => {
-            return response.json();
-        })
-        .then(jsonResponse => {
+        }).then(jsonResponse => {
+            return jsonResponse.json();
+        }).then(jsonResponse => {
             if(!jsonResponse.tracks) {
                 return[];
             }

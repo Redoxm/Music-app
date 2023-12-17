@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import "./Track.css";
 
-class Track extends React.Component {
+class Track extends Component {
     constructor(props) {
          super(props);
          this.state = {
@@ -15,7 +15,7 @@ class Track extends React.Component {
         this.props.onAdd(this.props.track);
     }
 
-    removeTrack() {
+    removeTrack(event) {
         this.props.onRemove(this.props.track);
     }
 
