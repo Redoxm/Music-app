@@ -1,20 +1,22 @@
 import React, {Component} from "react";
-import SearchResults from "../SearchResults/SearchResults";
-import SearchBar from "../SearchBar/SearchBar";
-import Playlist from "../Playlist/Playlist";
-import Spotify from "../Utils/Spotify";
+import './App.css';
+import SearchResults from "../SearchResults/SearchResults.js";
+import SearchBar from "../SearchBar/SearchBar.js";
+import Playlist from "../Playlist/Playlist.js";
+import Spotify from "../Utils/Spotify.js";
 
 
 class App extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       SearchResults: [],
       playlistName: "New Playlist",
       playlistTracks: [],
-    }
+    };
     
-    this.search = this.search.bind(this),
+    this.search = this.search.bind(this);
     this.addTrack = this.addTrack.bind(this);
     this.removeTrack = this.removeTrack.bind(this);
     this.updatePlaylistName = this.updatePlaylistName.bind(this);
