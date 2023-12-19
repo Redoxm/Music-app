@@ -8,7 +8,7 @@ export default class SearchBar extends Component {
             term: "",
          }
          this.handleTermChange = this.handleTermChange.bind(this);
-         this.Search = this.Search.bind(this);
+         this.search = this.search.bind(this);
          this.handleEnter = this.handleEnter.bind(this);
     }
 
@@ -16,13 +16,13 @@ export default class SearchBar extends Component {
         this.setState({term: event.target.value});
     }
 
-    Search() {
+    search() {
         this.props.onSearch(this.state.term);
     }
 
     handleEnter(event) {
         if (event.keyCode === 13) {
-            this.Search();
+            this.search();
         }
     }
 
@@ -30,7 +30,7 @@ export default class SearchBar extends Component {
         return (
             <div className="SearchBar">
             <input placeholder="Enter song, album or artist" onChange={this.handleTermChange} onKeyUp={this.handleEnter}/>
-            <button className="SearchButton" onClick={this.Search}>SEARCH</button>
+            <button className="SearchButton" onClick={this.search}>SEARCH</button>
             </div>
         );
         
