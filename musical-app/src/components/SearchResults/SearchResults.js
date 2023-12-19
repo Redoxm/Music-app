@@ -1,6 +1,6 @@
     import React from "react";
 
-    import "../TrackList/TrackList.css";
+    import "./SearchResults.css";
 
     import TrackList from "../TrackList/TrackList";
 
