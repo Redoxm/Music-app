@@ -1,9 +1,9 @@
 import React, {Component} from "react";
 import './App.css';
-import SearchResults from "../SearchResults/SearchResults.js";
-import SearchBar from "../SearchBar/SearchBar.js";
-import Playlist from "../Playlist/Playlist.js";
-import Spotify from "../Utils/Spotify.js";
+import SearchResults from "../SearchResults/SearchResults";
+import SearchBar from "../SearchBar/SearchBar";
+import Playlist from "../Playlist/Playlist";
+import Spotify from "../Utils/Spotify";
 
 
 class App extends Component {
@@ -51,7 +51,7 @@ class App extends Component {
   removeTrackSearch(track) {
     let tracks = this.state.SearchResults;
     tracks = tracks.filter(currentTrack => currentTrack.id !== track.id);
-    this.setState({searchResults: tracks});
+    this.setState({SearchResults: tracks});
   }
 
   updatePlaylistName(name) {
