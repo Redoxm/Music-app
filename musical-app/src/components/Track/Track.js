@@ -15,8 +15,8 @@ class Track extends Component {
         this.props.onAdd(this.props.track);
     }
 
-    removeTrack(event) {
-        this.props.onRemove(this.state.track);
+    removeTrack() {
+        this.props.onRemove(this.props.track);
     }
 
     renderAction() {
@@ -47,7 +47,7 @@ class Track extends Component {
                     src = {"https://open.spotify.com/embed/track/" + this.props.track.id}
                     width="300"
                     height="80"
-                    frameborder="0"
+                    frameBorder="0"
                     allowtransparency = "true"
                     allow = "encrypted-media"
                     title="preview"                    

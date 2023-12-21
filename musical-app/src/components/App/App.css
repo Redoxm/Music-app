@@ -46,6 +46,7 @@ h2 {
 .App-playlist {
   display: flex;
   justify-content: space-between;
+  
 }
 
 @media only screen and (max-width: 1020px) {
