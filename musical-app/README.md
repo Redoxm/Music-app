@@ -5,7 +5,7 @@
 - Musical app that connect to a third party API service, Spotify
 
 ## Technology used are:
-
+music
 - HTML
 - CSS
 - JAVASCRIPT
